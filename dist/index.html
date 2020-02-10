@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../node_modules/bulma/css/bulma.css">
+    <link rel="stylesheet" href="./global.css">
+    <title>Electron CheatSheet</title>
+  </head>
+  <body>
+    <!-- Menubar -->
+    <nav id="navbar" class="navbar is-transparent is-fixed-top">
+      <div class="navbar-brand columns is-mobile">
+        <a class="navbar-item is-left is-spaced" href="https://www.automotivelinux.org/">
+          <img class="menubar-icon-img"
+               src="./resource/agl_logo.png" alt="AGL Logo Image">
+        </a>
+        <a class="nabvar-item is-left is-spaced"
+           href="https://github.com/automotive-grade-linux/docs-agl"
+           target="_blank">
+          <img class="menubar-icon-img"
+               src="./resource/github-icon.jpg" alt="Github Icon Image"
+               width="28" height="28">
+        </a>
+        <a class="nabvar-item is-left is-spaced"
+           href="https://gerrit.automotivelinux.org/gerrit"
+           target="_blank">
+          <img class="menubar-icon-img"
+               src="./resource/Gerrit_icon.svg.png" alt="Gerrit Icon Image"
+               width="28" height="28">
+        </a>
+
+        <div class="navbar-burger burger is-spaced" data-target="menu-item-list">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    
+      <div id="menu-item-list" class="navbar-menu">
+        <div class="navbar-start">
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link is-active" href="https://wiki.automotivelinux.org/">
+              Wiki
+            </a>
+            <div class="navbar-dropdown is-boxed is-right">
+              <a class="navbar-item " href="https://wiki.automotivelinux.org/agl-sat/">
+                System Architecture Team
+              </a>
+              <a class="navbar-item " href="https://wiki.automotivelinux.org/eg-app-fw/">
+                App Framework and Security
+              </a>
+              <a class="navbar-item " href="https://wiki.automotivelinux.org/eg-connectivity/">
+                Connectivity
+              </a>
+              <a class="navbar-item " href="https://wiki.automotivelinux.org/eg-ciat/">
+                Continuous Intergration and Test
+              </a>
+              <a class="navbar-item " href="https://wiki.automotivelinux.org/eg-ic/">
+                Instrument Cluster
+              </a>
+              <a class="navbar-item " href="https://wiki.automotivelinux.org/eg-navi/">
+                Navigation
+              </a>
+              <a class="navbar-item " href="https://wiki.automotivelinux.org/eg-rhsa/">
+                Reference Hardware System Architecture
+              </a>
+              <a class="navbar-item " href="https://wiki.automotivelinux.org/eg-speech/">
+                Speech
+              </a>
+              <a class="navbar-item " href="https://wiki.automotivelinux.org/eg-requirements-specification/">
+                System Spec
+              </a>
+              <a class="navbar-item " href="https://wiki.automotivelinux.org/eg-ui-graphics/">
+                UI and Graphics
+              </a>
+              <a class="navbar-item " href="https://wiki.automotivelinux.org/eg-v2c/">
+                Vehicle to Cloud
+              </a>
+              <a class="navbar-item " href="https://wiki.automotivelinux.org/eg-virt/">
+                Virtualization
+              </a>
+              <hr class="navbar-divider">
+              <div class="navbar-item">
+                <div>
+                  <p class="is-size-6-desktop">
+                    <small><strong class="has-text-info">
+                      view all
+                    </strong></small>
+                  </p>
+                </div>
+              </div>
+              </dic>
+            </div>
+          </div>
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="field is-grouped">
+                <p class="control">
+                  <a class="bd-tw-button button"
+                     data-social-network="Twitter"
+                     data-social-action="tweet"
+                     target="_blank"
+                     href="https://twitter.com/intent/tweet?text=Tweet by My Electron App">
+                    <span class="icon">
+                      <i class="fab fa-twitter" aria-hidden="true"></i>
+                    </span>
+                    <span>Tweet</span>
+                  </a>
+                </p>
+                <p class="control">
+                  <a class="button is-primary">
+                    <span class="icon">
+                      <i class="fas fa-download" aria-hidden="true"></i>
+                    </span>
+                    <span>Download</span>
+                  </a>
+                </p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Contents Header -->
+    <section id="header" class="hero is-dark is-small">
+      <div class="hero-body">
+        <p class="title">
+          Electron Cheet Sheet
+        </p>
+        <p class="subtitle">
+          and, Bulma CSS Framework cheet sheet
+        </p>
+      </div>
+    </section>
+
+    <br>
+
+    <!-- Contents Body -->
+    <main id="body"><p>
+    <div id="contents"></div>
+    <div class="container is-fluid">
+      <div class="columns is-multiline is-mobile">
+        <div class="column is-one-quarter button is-primary column-blue">
+          Item1-1
+        </div>
+        <div class="column is-one-quarter button is-primary column-blue">
+          Item1-2
+        </div>
+        <div class="column is-one-quarter button is-primary column-blue">
+          Item1-3
+        </div>
+        <div class="column is-one-quarter button is-primary column-blue">
+          Item1-4
+        </div>
+
+        <div class="column is-half button is-primary column-blue">
+          Item2-1
+        </div>
+        <div class="column is-one-quarter button is-primary column-blue">
+          Item2-2
+        </div>
+        <div class="column is-one-quarter button is-primary column-blue">
+          Item2-3
+        </div>
+
+        <div class="column button is-primary">
+          Update
+        </div>
+        <div class="column button is-primary column-blue">
+          Auto
+        </div>
+      </div>
+    </div>
+    </p></main>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+      <div class="content is-small has-text-centered">
+        <div class="container">
+          Node.js <span id="node-version"></span>,
+          Chromium <span id="chrome-version"></span>,
+          Electron <span id="electron-version"></span>.
+          <br>App Start Date: <span id="date-app-start"></span>
+        </div>
+      </div>
+    </footer>
+    <!-- You can also require other files to run in this process -->
+    <script type="text/javascript" src="scripts/renderer.js"></script>
+  </body>
+</html>

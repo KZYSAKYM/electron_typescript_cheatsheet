@@ -1,0 +1,17 @@
+/*
+ * This class for img elem in navbar-brand
+ */
+.menubar-icon-img {
+	margin-top: 25px;
+	margin-left: 5px;
+	margin-right: 5px;
+};
+
+.column-blue {
+	margin-top: 30px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 30px;
+	height: 200px;
+	background-color: #0099CC;
+};
